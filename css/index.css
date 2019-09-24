@@ -322,6 +322,9 @@ header {
   align-items: center;
   background: #55af64;
 }
+header img {
+  height: 6rem;
+}
 header nav {
   width: 60%;
   display: flex;
@@ -333,9 +336,17 @@ header nav a {
   font-weight: bold;
   padding: 0 2%;
 }
+header nav a:hover {
+  color: white;
+}
 .container {
   margin: 0 auto;
   width: 70%;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 98vw;
+  }
 }
 .container .content {
   padding: 2%;
@@ -352,6 +363,11 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .container .flexHold {
+    flex-direction: column;
+  }
+}
 .container .flexHold .person {
   padding: 1%;
   margin: 1%;
@@ -365,40 +381,47 @@ header nav a {
 .container .flexHold img {
   max-width: 600px;
 }
-.container main {
-  border: 1px solid black;
+@media only screen and (max-width: 500px) {
+  .container .flexHold img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container .flexReverse {
+    flex-direction: column-reverse;
+  }
+}
+.container .main {
   background: #f5f5f5;
 }
-.container main .imgHold {
+.container .main .imgHold {
   display: flex;
   justify-content: center;
 }
-.container main .imgHold img {
+.container .main .imgHold img {
   height: 12rem;
 }
-.container main .game {
+.container .main .game {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f5f5f5;
 }
-.container main .game .gameValue {
-  color: white;
+.container .main .game .gameValue {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.container main .game button {
+.container .main .game button {
   border: none;
   margin: 15% 0;
   padding: 10% 2%;
   background: #55af64;
   color: black;
 }
-.container main .game button:hover {
+.container .main .game button:hover {
   color: white;
 }
-.container main .game input {
+.container .main .game input {
   color: black;
   margin: 2% 0;
 }
@@ -410,6 +433,9 @@ footer {
   align-items: center;
   background: #55af64;
 }
+footer img {
+  height: 6rem;
+}
 footer nav {
   width: 60%;
   display: flex;
@@ -420,6 +446,9 @@ footer nav a {
   color: black;
   font-weight: bold;
   padding: 0 2%;
+}
+footer nav a:hover {
+  color: white;
 }
 .fa {
   font-size: 5rem;

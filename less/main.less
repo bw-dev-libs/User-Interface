@@ -3,6 +3,11 @@
   width: 70%;
 
 
+  @media only screen and (max-width: 500px){
+    width: 98vw;
+  }
+
+
   .content{
     padding: 2%;
     margin-top: 1.5%;
@@ -20,6 +25,11 @@
   .flexHold{
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 500px){
+      flex-direction: column;
+    }
+
 
     .person{
       padding: 1%;
@@ -39,15 +49,25 @@
 
     img{
       max-width: 600px;
+
+      @media only screen and (max-width: 500px){
+        width: 100%;
+      }
     }
 
 
   }
 
-  main{
+  .flexReverse{
 
-    border: 1px solid black;
+    @media only screen and (max-width: 500px){
+      flex-direction: column-reverse;
+    }
+  }
+
+  .main{
     background: #f5f5f5;
+
 
     .imgHold{
       display: flex;
@@ -62,10 +82,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: #f5f5f5;
 
       .gameValue{
-        color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
