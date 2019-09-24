@@ -315,6 +315,7 @@ template {
 }
 header {
   margin-top: 1%;
+  margin-bottom: 1%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -364,27 +365,42 @@ header nav a {
 .container .flexHold img {
   max-width: 600px;
 }
-.container .game {
+.container main {
   border: 1px solid black;
+  background: #f5f5f5;
+}
+.container main .imgHold {
+  display: flex;
+  justify-content: center;
+}
+.container main .imgHold img {
+  height: 12rem;
+}
+.container main .game {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #2d3047;
+  background: #f5f5f5;
 }
-.container .game .gameValue {
+.container main .game .gameValue {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.container .game button {
+.container main .game button {
   border: none;
   margin: 15% 0;
   padding: 10% 2%;
+  background: #55af64;
+  color: black;
 }
-.container .game button:hover {
-  color: #e0ca3c;
-  background: #048a81;
+.container main .game button:hover {
+  color: white;
+}
+.container main .game input {
+  color: black;
+  margin: 2% 0;
 }
 footer {
   margin-top: 1%;
