@@ -316,32 +316,45 @@ template {
 header {
   margin-top: 1%;
   margin-bottom: 1%;
+  background: #55af64;
+  height: 20%;
+  position: relative;
+}
+header svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  fill: white;
+}
+header .headerFlexHold {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
-  background: #55af64;
+  width: 100%;
 }
-header img {
+header .headerFlexHold img {
   height: 6rem;
 }
-header nav {
+header .headerFlexHold nav {
   width: 60%;
   display: flex;
   justify-content: flex-end;
 }
-header nav a {
+header .headerFlexHold nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   padding: 0 2%;
 }
-header nav a:hover {
+header .headerFlexHold nav a:hover {
   color: white;
 }
 .container {
   margin: 0 auto;
   width: 70%;
+  height: 1000px;
 }
 @media only screen and (max-width: 500px) {
   .container {
@@ -427,27 +440,40 @@ header nav a:hover {
 }
 footer {
   margin-top: 1%;
+  margin-bottom: 1%;
+  background: white;
+  height: 20%;
+  position: relative;
+}
+footer svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  fill: #55af64;
+}
+footer .footerFlexHold {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
-  background: #55af64;
+  width: 100%;
 }
-footer img {
+footer .footerFlexHold img {
   height: 6rem;
 }
-footer nav {
+footer .footerFlexHold nav {
   width: 60%;
   display: flex;
   justify-content: flex-end;
 }
-footer nav a {
+footer .footerFlexHold nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   padding: 0 2%;
 }
-footer nav a:hover {
+footer .footerFlexHold nav a:hover {
   color: white;
 }
 .fa {
