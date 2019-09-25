@@ -374,7 +374,7 @@ header .headerFlexHold nav a:hover {
 }
 .container .flexHold {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
@@ -382,21 +382,54 @@ header .headerFlexHold nav a:hover {
     flex-direction: column;
   }
 }
-.container .flexHold .person {
-  padding: 1%;
-  margin: 1%;
-}
-.container .flexHold .person img {
-  width: 95%;
-}
 .container .flexHold .content-text {
   padding: 1%;
+}
+.container .flexHold .content-text ul,
+.container .flexHold .content-text h4 {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container .flexHold .content-text ul li,
+.container .flexHold .content-text h4 li {
+  padding: 2% 0;
+  margin-left: -20%;
+}
+.container .flexHold .content-text ul li .fab,
+.container .flexHold .content-text h4 li .fab,
+.container .flexHold .content-text ul li .fas,
+.container .flexHold .content-text h4 li .fas {
+  font-size: 3rem;
+  color: black;
 }
 .container .flexHold img {
   max-width: 600px;
 }
 @media only screen and (max-width: 500px) {
   .container .flexHold img {
+    width: 100%;
+  }
+}
+.container .flexHoldPerson {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .container .flexHoldPerson {
+    flex-direction: column;
+  }
+}
+.container .flexHoldPerson .person {
+  padding: 0;
+  margin: 1%;
+}
+.container .flexHoldPerson .person img {
+  width: 95%;
+}
+@media only screen and (max-width: 500px) {
+  .container .flexHoldPerson .person img {
     width: 100%;
   }
 }
