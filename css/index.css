@@ -371,6 +371,11 @@ header .headerFlexHold nav a:hover {
     width: 98vw;
   }
 }
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 98vw;
+  }
+}
 .container .content {
   padding: 2%;
   margin-top: 1.5%;
@@ -380,18 +385,23 @@ header .headerFlexHold nav a:hover {
 }
 .container .content .UI {
   border: 2px solid #a6a6a6;
+  margin: 1%;
 }
 .container .content .Frontend {
   border: 2px solid #a6a6a6;
+  margin: 1%;
 }
 .container .content .Backend {
   border: 2px solid #a6a6a6;
+  margin: 1%;
 }
 .container .content .Android {
   border: 2px solid #a6a6a6;
+  margin: 1%;
 }
 .container .content .IOS {
   border: 2px solid #a6a6a6;
+  margin: 1%;
 }
 .container .content #about {
   width: 100%;
@@ -403,6 +413,11 @@ header .headerFlexHold nav a:hover {
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
+  .container .flexHold {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
   .container .flexHold {
     flex-direction: column;
   }
@@ -435,6 +450,11 @@ header .headerFlexHold nav a:hover {
   justify-content: space-between;
 }
 @media only screen and (max-width: 500px) {
+  .container .flexHoldPerson {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
   .container .flexHoldPerson {
     flex-direction: column;
   }
@@ -513,7 +533,6 @@ footer .footerFlexHold {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
 }
 footer .footerFlexHold .boilerPlate {
   display: flex;
@@ -525,6 +544,11 @@ footer .footerFlexHold .boilerPlate i {
 @media only screen and (max-width: 500px) {
   footer .footerFlexHold .boilerPlate i {
     padding: 0 2%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  footer .footerFlexHold .boilerPlate i {
+    padding: 0 4%;
   }
 }
 footer .footerFlexHold img {
