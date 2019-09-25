@@ -13,30 +13,21 @@ footer{
   fill: #55af64;
   }
 
+  .boilerPlate{
+    text-align: center;
+
+    i{
+      padding: 0 1%;
+    }
+  }
+
   .footerFlexHold{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-
-
-    .boilerPlate{
-      display: flex;
-      justify-content: space-between;
-
-      i{
-         padding: 0 10%;
-
-         @media only screen and (max-width: 500px){
-           padding: 0 2%;
-         }
-         @media only screen and (max-width: 900px){
-           padding: 0 4%;
-         }
-      }
-    }
-
 
     img{
       height: 6rem;
@@ -47,10 +38,9 @@ footer{
     }
 
     nav{
-      width: 30%;
+      width: 50%;
       display: flex;
       justify-content: flex-end;
-      // border: 1px solid black;
 
       @media only screen and (max-width: 500px){
         flex-direction: column;

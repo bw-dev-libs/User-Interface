@@ -383,24 +383,8 @@ header .headerFlexHold nav a:hover {
   border-left: 3px solid #a6a6a6;
   border-right: 3px solid #a6a6a6;
 }
-.container .content .UI {
-  border: 2px solid #a6a6a6;
-  margin: 1%;
-}
-.container .content .Frontend {
-  border: 2px solid #a6a6a6;
-  margin: 1%;
-}
-.container .content .Backend {
-  border: 2px solid #a6a6a6;
-  margin: 1%;
-}
-.container .content .Android {
-  border: 2px solid #a6a6a6;
-  margin: 1%;
-}
-.container .content .IOS {
-  border: 2px solid #a6a6a6;
+.container .content .Team {
+  border-bottom: 2.5px solid #a6a6a6;
   margin: 1%;
 }
 .container .content #about {
@@ -464,12 +448,7 @@ header .headerFlexHold nav a:hover {
   margin: 1%;
 }
 .container .flexHoldPerson .person img {
-  width: 95%;
-}
-@media only screen and (max-width: 500px) {
-  .container .flexHoldPerson .person img {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media only screen and (max-width: 500px) {
   .container .flexReverse {
@@ -513,6 +492,30 @@ header .headerFlexHold nav a:hover {
 .container .Team-title {
   text-align: center;
 }
+.container .fa-google-play {
+  color: coral;
+}
+.container .fa-apple {
+  color: black;
+}
+.container .fa-desktop {
+  color: #55af64;
+}
+.container .fa-html5 {
+  color: #f16529;
+}
+.container .fa-css3-alt {
+  color: #339af0;
+}
+.container .fa-react {
+  color: #61dafb;
+}
+.container .fa-node {
+  color: #43853d;
+}
+.container .fa-swift {
+  color: #DC461D;
+}
 footer {
   margin-top: 1%;
   margin-bottom: 1%;
@@ -527,29 +530,19 @@ footer svg {
   height: 100px;
   fill: #55af64;
 }
+footer .boilerPlate {
+  text-align: center;
+}
+footer .boilerPlate i {
+  padding: 0 1%;
+}
 footer .footerFlexHold {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-}
-footer .footerFlexHold .boilerPlate {
-  display: flex;
-  justify-content: space-between;
-}
-footer .footerFlexHold .boilerPlate i {
-  padding: 0 10%;
-}
-@media only screen and (max-width: 500px) {
-  footer .footerFlexHold .boilerPlate i {
-    padding: 0 2%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  footer .footerFlexHold .boilerPlate i {
-    padding: 0 4%;
-  }
 }
 footer .footerFlexHold img {
   height: 6rem;
@@ -560,7 +553,7 @@ footer .footerFlexHold img {
   }
 }
 footer .footerFlexHold nav {
-  width: 30%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
