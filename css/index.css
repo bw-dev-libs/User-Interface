@@ -337,6 +337,11 @@ header .headerFlexHold {
 header .headerFlexHold img {
   height: 6rem;
 }
+@media only screen and (max-width: 500px) {
+  header .headerFlexHold img {
+    height: 3rem;
+  }
+}
 header .headerFlexHold nav {
   width: 60%;
   display: flex;
@@ -500,16 +505,31 @@ footer .footerFlexHold .boilerPlate {
   justify-content: space-between;
 }
 footer .footerFlexHold .boilerPlate i {
-  padding: 0 4%;
+  padding: 0 10%;
+}
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold .boilerPlate i {
+    padding: 0 2%;
+  }
 }
 footer .footerFlexHold img {
   height: 6rem;
+}
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold img {
+    height: 3rem;
+  }
 }
 footer .footerFlexHold nav {
   width: 30%;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid black;
+}
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 footer .footerFlexHold nav a {
   text-decoration: none;
