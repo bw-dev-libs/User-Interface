@@ -16,9 +16,19 @@ footer{
   .footerFlexHold{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    border: 1px solid black;
+
+    .boilerPlate{
+      display: flex;
+      justify-content: space-between;
+
+      i{
+        padding: 0 4%;
+      }
+    }
 
 
     img{
@@ -26,9 +36,10 @@ footer{
     }
 
     nav{
-      width: 60%;
+      width: 30%;
       display: flex;
       justify-content: flex-end;
+      border: 1px solid black;
 
       a{
         text-decoration: none;
@@ -37,7 +48,7 @@ footer{
         padding: 0 2%;
 
         &:hover{
-          color: white;
+          color: #55af64;
         }
       }
     }

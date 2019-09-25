@@ -356,6 +356,11 @@ header .headerFlexHold nav a:hover {
   width: 70%;
   height: 1000px;
 }
+.container .fab,
+.container .fas {
+  font-size: 3rem;
+  color: black;
+}
 @media only screen and (max-width: 500px) {
   .container {
     width: 98vw;
@@ -396,13 +401,6 @@ header .headerFlexHold nav a:hover {
 .container .flexHold .content-text h4 li {
   padding: 2% 0;
   margin-left: -20%;
-}
-.container .flexHold .content-text ul li .fab,
-.container .flexHold .content-text h4 li .fab,
-.container .flexHold .content-text ul li .fas,
-.container .flexHold .content-text h4 li .fas {
-  font-size: 3rem;
-  color: black;
 }
 .container .flexHold img {
   max-width: 600px;
@@ -492,17 +490,26 @@ footer svg {
 footer .footerFlexHold {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  border: 1px solid black;
+}
+footer .footerFlexHold .boilerPlate {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerFlexHold .boilerPlate i {
+  padding: 0 4%;
 }
 footer .footerFlexHold img {
   height: 6rem;
 }
 footer .footerFlexHold nav {
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
+  border: 1px solid black;
 }
 footer .footerFlexHold nav a {
   text-decoration: none;
@@ -511,7 +518,7 @@ footer .footerFlexHold nav a {
   padding: 0 2%;
 }
 footer .footerFlexHold nav a:hover {
-  color: white;
+  color: #55af64;
 }
 .fa {
   font-size: 5rem;
