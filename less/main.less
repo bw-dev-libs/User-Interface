@@ -4,8 +4,18 @@
   //without setting height, I couldnt get a percentage of the container
   height: 1000px;
 
+  .fab, .fas{
+    font-size: 3rem;
+    color: black;
+  }
+
+
 
   @media only screen and (max-width: 500px){
+    width: 98vw;
+  }
+
+  @media only screen and (max-width: 800px){
     width: 98vw;
   }
 
@@ -17,9 +27,10 @@
     border-left: 3px solid #a6a6a6;
     border-right: 3px solid #a6a6a6;
 
-    // .content-image{
-    //   border: 3px solid #a6a6a6;
-    // }
+    .Team{
+       border-bottom: 2.5px solid #a6a6a6;
+      margin: 1%;
+    }
 
     #about{
       width: 100%;
@@ -30,30 +41,32 @@
 
   .flexHold{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
-
 
     @media only screen and (max-width: 500px){
       flex-direction: column;
     }
 
-
-    .person{
-      padding: 1%;
-      margin: 1%;
-      // border-bottom: 3px solid #a6a6a6;
-
-      img{
-        width: 95%;
-
-      }
+    @media only screen and (max-width: 800px){
+      flex-direction: column;
     }
 
     .content-text{
       padding: 1%;
 
+      ul,h4{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+
+        li{
+          padding: 2% 0;
+          margin-left: -20%;
+
+        }
+      }
     }
 
     img{
@@ -65,6 +78,32 @@
     }
 
 
+  }
+
+  .flexHoldPerson{
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 500px){
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 800px){
+      flex-direction: column;
+    }
+
+    .person{
+      padding: 0;
+      margin: 1%;
+
+
+      img{
+
+        width: 100%;
+
+
+      }
+    }
   }
 
   .flexReverse{
@@ -127,6 +166,33 @@
 
   .Team-title{
     text-align: center;
+  }
+
+  //Icon color classes
+
+  .fa-google-play{
+    color: coral;
+  }
+  .fa-apple{
+    color: black;
+  }
+  .fa-desktop{
+    color: #55af64
+  }
+  .fa-html5{
+    color: #f16529
+  }
+  .fa-css3-alt{
+    color: #339af0;
+  }
+  .fa-react{
+    color:#61dafb
+  }
+  .fa-node{
+    color:#43853d
+  }
+  .fa-swift{
+    color:#DC461D
   }
 
 

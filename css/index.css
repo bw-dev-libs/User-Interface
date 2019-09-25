@@ -337,6 +337,11 @@ header .headerFlexHold {
 header .headerFlexHold img {
   height: 6rem;
 }
+@media only screen and (max-width: 500px) {
+  header .headerFlexHold img {
+    height: 3rem;
+  }
+}
 header .headerFlexHold nav {
   width: 60%;
   display: flex;
@@ -356,7 +361,17 @@ header .headerFlexHold nav a:hover {
   width: 70%;
   height: 1000px;
 }
+.container .fab,
+.container .fas {
+  font-size: 3rem;
+  color: black;
+}
 @media only screen and (max-width: 500px) {
+  .container {
+    width: 98vw;
+  }
+}
+@media only screen and (max-width: 800px) {
   .container {
     width: 98vw;
   }
@@ -368,13 +383,17 @@ header .headerFlexHold nav a:hover {
   border-left: 3px solid #a6a6a6;
   border-right: 3px solid #a6a6a6;
 }
+.container .content .Team {
+  border-bottom: 2.5px solid #a6a6a6;
+  margin: 1%;
+}
 .container .content #about {
   width: 100%;
   height: 30%;
 }
 .container .flexHold {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
@@ -382,15 +401,25 @@ header .headerFlexHold nav a:hover {
     flex-direction: column;
   }
 }
-.container .flexHold .person {
-  padding: 1%;
-  margin: 1%;
-}
-.container .flexHold .person img {
-  width: 95%;
+@media only screen and (max-width: 800px) {
+  .container .flexHold {
+    flex-direction: column;
+  }
 }
 .container .flexHold .content-text {
   padding: 1%;
+}
+.container .flexHold .content-text ul,
+.container .flexHold .content-text h4 {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container .flexHold .content-text ul li,
+.container .flexHold .content-text h4 li {
+  padding: 2% 0;
+  margin-left: -20%;
 }
 .container .flexHold img {
   max-width: 600px;
@@ -399,6 +428,27 @@ header .headerFlexHold nav a:hover {
   .container .flexHold img {
     width: 100%;
   }
+}
+.container .flexHoldPerson {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .container .flexHoldPerson {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container .flexHoldPerson {
+    flex-direction: column;
+  }
+}
+.container .flexHoldPerson .person {
+  padding: 0;
+  margin: 1%;
+}
+.container .flexHoldPerson .person img {
+  width: 100%;
 }
 @media only screen and (max-width: 500px) {
   .container .flexReverse {
@@ -442,6 +492,30 @@ header .headerFlexHold nav a:hover {
 .container .Team-title {
   text-align: center;
 }
+.container .fa-google-play {
+  color: coral;
+}
+.container .fa-apple {
+  color: black;
+}
+.container .fa-desktop {
+  color: #55af64;
+}
+.container .fa-html5 {
+  color: #f16529;
+}
+.container .fa-css3-alt {
+  color: #339af0;
+}
+.container .fa-react {
+  color: #61dafb;
+}
+.container .fa-node {
+  color: #43853d;
+}
+.container .fa-swift {
+  color: #DC461D;
+}
 footer {
   margin-top: 1%;
   margin-bottom: 1%;
@@ -456,20 +530,38 @@ footer svg {
   height: 100px;
   fill: #55af64;
 }
+footer .boilerPlate {
+  text-align: center;
+}
+footer .boilerPlate i {
+  padding: 0 1%;
+}
 footer .footerFlexHold {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 footer .footerFlexHold img {
   height: 6rem;
 }
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold img {
+    height: 3rem;
+  }
+}
 footer .footerFlexHold nav {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 footer .footerFlexHold nav a {
   text-decoration: none;
@@ -478,7 +570,7 @@ footer .footerFlexHold nav a {
   padding: 0 2%;
 }
 footer .footerFlexHold nav a:hover {
-  color: white;
+  color: #55af64;
 }
 .fa {
   font-size: 5rem;
