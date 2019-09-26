@@ -8,7 +8,7 @@ footer{
   svg {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  .width();
   height: 100px;
   fill: #55af64;
   }
@@ -22,12 +22,12 @@ footer{
   }
 
   .footerFlexHold{
-    display: flex;
+    .flex();
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    .width();
 
     @media only screen and (max-width: 500px){
       justify-content: space-around;
@@ -43,7 +43,7 @@ footer{
 
     nav{
       width: 30%;
-      display: flex;
+      .flex();
       justify-content: flex-end;
       justify-content: space-around;
 
@@ -59,7 +59,7 @@ footer{
         padding: 0 1%;
 
         &:hover{
-          color: #55af64;
+          color: @green;
         }
       }
     }
