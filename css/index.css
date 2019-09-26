@@ -387,6 +387,11 @@ header .headerFlexHold nav a:hover {
   border-bottom: 2.5px solid #a6a6a6;
   margin: 1%;
 }
+@media only screen and (max-width: 800px) {
+  .container .content .Team {
+    width: 98%;
+  }
+}
 .container .content #about {
   width: 100%;
   height: 30%;
@@ -432,6 +437,7 @@ header .headerFlexHold nav a:hover {
 .container .flexHoldPerson {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 @media only screen and (max-width: 500px) {
   .container .flexHoldPerson {
@@ -447,10 +453,30 @@ header .headerFlexHold nav a:hover {
   padding: 0;
   margin: 1%;
 }
+@media only screen and (max-width: 800px) {
+  .container .flexHoldPerson .person {
+    width: 98%;
+  }
+}
+.container .flexHoldPerson .person .GitHold {
+  text-align: center;
+}
+.container .flexHoldPerson .person .GitHold .fa-github {
+  font-size: 2rem;
+  color: black;
+}
+.container .flexHoldPerson .person .GitHold .fa-github:hover {
+  color: #55af64;
+}
 .container .flexHoldPerson .person img {
   width: 100%;
 }
 @media only screen and (max-width: 500px) {
+  .container .flexReverse {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 800px) {
   .container .flexReverse {
     flex-direction: column-reverse;
   }
