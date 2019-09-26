@@ -330,9 +330,14 @@ header svg {
 header .headerFlexHold {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  header .headerFlexHold {
+    justify-content: space-around;
+  }
 }
 header .headerFlexHold img {
   height: 6rem;
@@ -343,9 +348,10 @@ header .headerFlexHold img {
   }
 }
 header .headerFlexHold nav {
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
+  justify-content: space-around;
 }
 header .headerFlexHold nav a {
   text-decoration: none;
@@ -565,10 +571,15 @@ footer .boilerPlate i {
 footer .footerFlexHold {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  footer .footerFlexHold {
+    justify-content: space-around;
+  }
 }
 footer .footerFlexHold img {
   height: 6rem;
@@ -579,9 +590,10 @@ footer .footerFlexHold img {
   }
 }
 footer .footerFlexHold nav {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 500px) {
   footer .footerFlexHold nav {
@@ -593,7 +605,7 @@ footer .footerFlexHold nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  padding: 0 2%;
+  padding: 0 1%;
 }
 footer .footerFlexHold nav a:hover {
   color: #55af64;
