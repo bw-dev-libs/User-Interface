@@ -38,14 +38,14 @@
     }
 
     #about{
-      width: 100%;
+      .width();
       height: 30%;
     }
   }
 
 
   .flexHold{
-    display: flex;
+    .flex();
     justify-content: space-around;
     align-items: center;
 
@@ -57,13 +57,17 @@
       flex-direction: column;
     }
 
+    @media only screen and (max-width: 1200px){
+      flex-direction: column;
+    }
+
     .content-text{
       padding: 1%;
 
       ul,h4{
         list-style: none;
         text-align: center;
-        display: flex;
+        .flex();
         justify-content: space-around;
 
         li{
@@ -78,7 +82,7 @@
       max-width: 600px;
 
       @media only screen and (max-width: 500px){
-        width: 100%;
+        .width();
       }
     }
 
@@ -86,7 +90,7 @@
   }
 
   .flexHoldPerson{
-    display: flex;
+    .flex();
     justify-content: space-between;
     align-items: flex-end;
 
@@ -117,13 +121,13 @@
           color: black;
 
           &:hover{
-            color: #55af64;
+            color: @green;
           }
         }
       }
 
       img{
-        width: 100%;
+        .width();
       }
     }
   }
@@ -143,7 +147,7 @@
 
 
     .imgHold{
-      display: flex;
+      .flex();
       justify-content: center;
        img{
          height: 12rem;
@@ -152,12 +156,12 @@
 
     .game{
 
-      display: flex;
+      .flex();
       flex-direction: column;
       align-items: center;
 
       .gameValue{
-        display: flex;
+        .flex();
         flex-direction: column;
         align-items: flex-start;
       }
@@ -166,7 +170,7 @@
         border: none;
         margin: 15% 0;
         padding: 10% 2%;
-        background: #55af64;
+        background: @green;
         color: black;
 
         &:hover{
@@ -202,7 +206,7 @@
     color: black;
   }
   .fa-desktop{
-    color: #55af64;
+    color: @green;
   }
   .fa-html5{
     color: #f16529;

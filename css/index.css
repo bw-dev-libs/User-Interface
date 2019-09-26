@@ -417,6 +417,11 @@ header .headerFlexHold nav a:hover {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .container .flexHold {
+    flex-direction: column;
+  }
+}
 .container .flexHold .content-text {
   padding: 1%;
 }

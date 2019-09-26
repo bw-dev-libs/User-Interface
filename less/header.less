@@ -1,24 +1,24 @@
 header{
   margin-top: 1%;
   margin-bottom: 1%;
-  background: #55af64;
+  background: @green;
   height: 20%;
   position: relative;
 
   svg {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  .width();
   height: 100px;
   fill: white;
   }
 
   .headerFlexHold{
-    display: flex;
+    .flex();
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    .width();
 
     @media only screen and (max-width: 500px){
       justify-content: space-around;
@@ -35,7 +35,7 @@ header{
 
     nav{
       width: 30%;
-      display: flex;
+      .flex();
       justify-content: flex-end;
       justify-content: space-around;
 
